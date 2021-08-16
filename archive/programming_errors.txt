@@ -1,0 +1,161 @@
+================2021-07-17 23:21:16.584575================
+
+Traceback (most recent call last):
+  File "c:\Users\kwiec\Desktop\KANBAN Program nowy\MainWindow.py", line 72, in send_xml_to_server
+    x = str('dsf') + int(343)
+TypeError: can only concatenate str (not "int") to str
+
+
+================2021-07-18 00:32:14.657592================
+
+Traceback (most recent call last):
+  File "C:\Users\kwiec\Desktop\KANBAN Program nowy\src\MainWindow.py", line 87, in create_kanban
+    self.kanban = Kanban(zk_data=[self.tree.item(y)['values'] for y in
+  File "C:\Users\kwiec\Desktop\KANBAN Program nowy\src\Kanban.py", line 23, in __init__
+    self.dir_file - dir_file
+AttributeError: 'Kanban' object has no attribute 'dir_file'
+
+
+================2021-07-18 20:04:18.490185================
+
+Traceback (most recent call last):
+  File "C:\Users\kwiec\Desktop\KANBAN Program nowy\src\MainWindow.py", line 262, in list_files_in_server
+    for i, file in enumerate(self.server.list_of_files()):
+  File "C:\Users\kwiec\Desktop\KANBAN Program nowy\src\WebServer.py", line 65, in list_of_files
+    with SFTP(*self.login_data) as (client, sftp_client):
+  File "C:\Users\kwiec\Desktop\KANBAN Program nowy\src\WebServer.py", line 17, in __enter__
+    self.client.connect(hostname=self.host,
+  File "C:\Python\Python38\lib\site-packages\paramiko\client.py", line 368, in connect
+    raise NoValidConnectionsError(errors)
+paramiko.ssh_exception.NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 34.72.148.138
+
+
+================2021-07-18 23:35:49.515644================
+
+Traceback (most recent call last):
+  File "C:\Users\kwiec\Desktop\Program\src\MainWindow.py", line 72, in send_file_to_archive
+    print(shutil.move(file_name, self.old_files))
+  File "C:\Python\Python38\lib\shutil.py", line 789, in move
+    raise Error("Destination path '%s' already exists" % real_dst)
+shutil.Error: Destination path 'C:\Users\kwiec\Desktop\Program\old_file\9902016-20160909.xml' already exists
+
+
+================2021-07-19 08:27:24.794817================
+
+Traceback (most recent call last):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\MainWindow.py", line 230, in combobox_number_filtr
+    self.zk_numbers = [numbers[1] for numbers in self.ms_sql.get_cursor()]
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\SQLServerConnection.py", line 18, in get_cursor
+    return self.cursor
+AttributeError: 'SQLServerConnection' object has no attribute 'cursor'
+
+
+================2021-07-19 09:04:41.119574================
+
+Traceback (most recent call last):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\MainWindow.py", line 262, in list_files_in_server
+    for i, file in enumerate(self.server.list_of_files()):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\WebServer.py", line 65, in list_of_files
+    with SFTP(*self.login_data) as (client, sftp_client):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\WebServer.py", line 17, in __enter__
+    self.client.connect(hostname=self.host,
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\client.py", line 435, in connect
+    self._auth(
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\client.py", line 676, in _auth
+    key = self._key_from_filepath(
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\client.py", line 586, in _key_from_filepath
+    key = klass.from_private_key_file(key_path, password)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\pkey.py", line 235, in from_private_key_file
+    key = cls(filename=filename, password=password)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\rsakey.py", line 55, in __init__
+    self._from_private_key_file(filename, password)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\rsakey.py", line 175, in _from_private_key_file
+    data = self._read_private_key_file("RSA", filename, password)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\pkey.py", line 307, in _read_private_key_file
+    with open(filename, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'arex'
+
+
+================2021-07-19 09:06:26.646551================
+
+Traceback (most recent call last):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\MainWindow.py", line 278, in delete_file_from_server
+    self.server.delete_file(f'/{new_file_name}')
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\WebServer.py", line 74, in delete_file
+    sftp_client.remove(f'//home//schmidt//{file_name}')
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\sftp_client.py", line 398, in remove
+    self._request(CMD_REMOVE, path)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\sftp_client.py", line 813, in _request
+    return self._read_response(num)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\sftp_client.py", line 865, in _read_response
+    self._convert_status(msg)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\sftp_client.py", line 896, in _convert_status
+    raise IOError(errno.EACCES, text)
+PermissionError: [Errno 13] Permission denied
+
+
+================2021-07-19 10:02:06.243201================
+
+Traceback (most recent call last):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\MainWindow.py", line 262, in list_files_in_server
+    for i, file in enumerate(self.server.list_of_files()):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\WebServer.py", line 67, in list_of_files
+    stdin, stdout, stderr = client.exec_command(f'ls //home//{self.dir}//')
+AttributeError: 'ServerSFTP' object has no attribute 'dir'
+
+
+================2021-07-19 10:07:40.936740================
+
+Traceback (most recent call last):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\MainWindow.py", line 262, in list_files_in_server
+    for i, file in enumerate(self.server.list_of_files()):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\WebServer.py", line 66, in list_of_files
+    with SFTP(*self.login_data) as (client, sftp_client):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\WebServer.py", line 17, in __enter__
+    self.client.connect(hostname=self.host,
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\client.py", line 435, in connect
+    self._auth(
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\client.py", line 680, in _auth
+    self._transport.auth_publickey(username, key)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\transport.py", line 1580, in auth_publickey
+    return self.auth_handler.wait_for_response(my_event)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\auth_handler.py", line 236, in wait_for_response
+    raise e
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\transport.py", line 2109, in run
+    handler(self.auth_handler, m)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\auth_handler.py", line 298, in _parse_service_accept
+    sig = self.private_key.sign_ssh_data(blob)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\paramiko\dsskey.py", line 108, in sign_ssh_data
+    key = dsa.DSAPrivateNumbers(
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\cryptography\hazmat\primitives\asymmetric\dsa.py", line 244, in private_key
+    return backend.load_dsa_private_numbers(self)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\cryptography\hazmat\backends\openssl\backend.py", line 826, in load_dsa_private_numbers
+    dsa._check_dsa_private_numbers(numbers)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\cryptography\hazmat\primitives\asymmetric\dsa.py", line 282, in _check_dsa_private_numbers
+    _check_dsa_parameters(parameters)
+  File "C:\Users\user-user\AppData\Local\Programs\Python\Python38\lib\site-packages\cryptography\hazmat\primitives\asymmetric\dsa.py", line 274, in _check_dsa_parameters
+    raise ValueError("q must be exactly 160, 224, or 256 bits long")
+ValueError: q must be exactly 160, 224, or 256 bits long
+
+
+================2021-07-19 10:37:52.195568================
+
+Traceback (most recent call last):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\MainWindow.py", line 99, in create_kanban
+    self.kanban = Kanban(zk_data=[self.tree.item(y)['values'] for y in
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\Kanban.py", line 18, in __init__
+    self.zk_data = [x.replace('|','') for x in zk_data]
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\Kanban.py", line 18, in <listcomp>
+    self.zk_data = [x.replace('|','') for x in zk_data]
+AttributeError: 'list' object has no attribute 'replace'
+
+
+================2021-07-19 10:40:10.331681================
+
+Traceback (most recent call last):
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\MainWindow.py", line 99, in create_kanban
+    self.kanban = Kanban(zk_data=[self.tree.item(y)['values'].replace('|','') for y in
+  File "c:\Users\user-user\Desktop\TEST nowy program kanban\Program AREX-KANBAN\src\MainWindow.py", line 99, in <listcomp>
+    self.kanban = Kanban(zk_data=[self.tree.item(y)['values'].replace('|','') for y in
+AttributeError: 'list' object has no attribute 'replace'
+
