@@ -1,0 +1,3 @@
+old_file/*.xml
+src/__pycache__
+src/ssh_keys
