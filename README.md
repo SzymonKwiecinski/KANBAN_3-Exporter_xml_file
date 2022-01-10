@@ -57,3 +57,5 @@ The application was developed to reduce the time of creating warehouse documents
 Application's code was presented only to show skils of author.  
 The application was design to coperate with database of particular company and with specialy created Virtual machine on Google Cloude (Without them it does not work).   
 In code logins and passwords were replace by '???' in order to preserve security.
+### links:
+* [link to application quick movie presentation](https://www.youtube.com/watch?v=5tjD8tdDnCU)
