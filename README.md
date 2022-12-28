@@ -1,6 +1,6 @@
 # XML files exporter application
 
-GUI Aplication. Extract data from MSSQL Server, convert them to xml file and send this file to Google Cloud Virtual Machine.
+ETL process with GUI which extracts data from SQL Server to a local machine converts it to XML files and sends it to Google Cloud Virtual Machine. 
 
 <p align="center">
 <img src="README_gif_kanban.gif" width="400" height="200">
