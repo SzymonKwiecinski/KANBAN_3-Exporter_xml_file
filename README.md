@@ -23,13 +23,13 @@ ETL process with GUI which extracts data from SQL Server to a local machine conv
 </p>
 
 <p align="center">
-1. Export data from database
+1. Export data from the database to a local machine
 </p>
 <p align="center">
-2. Convert data to xml file
+2. Convert data to xml files
 </p>
 <p align="center">
-1. Send converted file to GCP VM
+3. Send converted files to GCP VM
 </p>
 
 ## Summary
