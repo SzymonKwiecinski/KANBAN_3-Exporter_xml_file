@@ -37,7 +37,7 @@ ETL process with GUI which extracts data from SQL Server to a local machine conv
 The application was developed to reduce the time of creating warehouse documents/invoices and to improve the quality of exchange of documents between two companies (eliminate paper).
 ### Big picture. How it works step by step 
 1. Our employee takes from our client's warehouse empty boxes with barcodes. On barcodes are implemented information about the product like Id code, storage location, quantity in the box. 
-2. An employee scans barcodes and uploads them to our MS Server database (using another program that I created:). Based on these data, create a warehouse document.
+2. An employee scans barcodes and uploads them to our MS Server database (using another program that I created:). Based on these data An employee create a warehouse document.
 3. In the warehouse, an employee prepares an order and fills boxes with goods.   
 4. Then someone sends the warehouse document created earlier to our client using my program. The program does the following:  
    1. Connects to SQL Server database
